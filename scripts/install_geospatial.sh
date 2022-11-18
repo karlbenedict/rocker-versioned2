@@ -78,11 +78,11 @@ install2.r --error --skipmissing --skipinstalled -n "$NCPUS" \
 R -e "BiocManager::install('rhdf5')"
 
 ## install wgrib2 for NOAA's NOMADS / rNOMADS forecast files
-/rocker_scripts/install_wgrib2.sh
+#/rocker_scripts/install_wgrib2.sh
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
-rm -r /tmp/downloaded_packages
+#rm -r /tmp/downloaded_packages
 
 ## Strip binary installed lybraries from RSPM
 ## https://github.com/rocker-org/rocker-versioned2/issues/340
